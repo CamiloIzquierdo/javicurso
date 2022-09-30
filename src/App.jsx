@@ -9,23 +9,16 @@ import ProtectedRoutes from "./components/Protect";
 import Detalle from "./components/Detalle";
 
 function App() {
-    let token = localStorage.getItem("token");
     return (
         <>
             <Header />
             <div className="container d-flex align-items-center flex-column">
                 <Routes>
                     <Route path="/" element={<Login />} />
-                    {token ? (
-                        <Routes>
-                            <Route element={<ProtectedRoutes />}>
-                                <Route path="/listado" element={<Listado />} />
-                                <Route path="/detalle" element={<Detalle />} />
-                            </Route>
-                        </Routes>
-                    ) : (
-                        <Link to="/" />
-                    )}
+                    <Route element={<ProtectedRoutes />}>
+                        <Route path="/listado" element={<Listado />} />
+                        <Route path="/detalle" element={<Detalle />} />
+                    </Route>
                 </Routes>
             </div>
             <Footer />
