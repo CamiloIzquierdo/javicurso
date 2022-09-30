@@ -9,6 +9,7 @@ import ProtectedRoutes from "./components/Protect";
 import Detalle from "./components/Detalle";
 
 function App() {
+    //Este es un comentario de prueba
     return (
         <>
             <Header />
