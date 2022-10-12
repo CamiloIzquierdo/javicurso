@@ -1,0 +1,17 @@
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+}
+header li {
+    list-style-type: none;
+    margin-right: 10px;
+    text-transform: capitalize;
+    height: 100%;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header a:hover {
+    color: red;
+}

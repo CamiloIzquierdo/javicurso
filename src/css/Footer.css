@@ -1,3 +1,18 @@
 footer {
-    background-color: aquamarine;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-grow: 1;
+    width: 100%;
+    padding: 15px 0;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+footer li {
+    list-style-type: none;
+}
+footer p {
+    color: rgba(255, 255, 255, 0.671);
 }

@@ -1,12 +1,12 @@
+import Buscador from "./Buscador";
 import { Link } from "react-router-dom";
-
+import "../css/Header.css";
+import Deslogear from "./Deslogear";
 function Header() {
-    let token = localStorage.getItem("token");
-
     return (
-        <header>
-            <nav>
-                <ul>
+        <header className="sticky-top">
+            <nav className="d-flex justify-content-between align-items-center">
+                <ul className="d-flex mb-0">
                     <li>
                         <Link to="/">Home</Link>
                     </li>
@@ -17,6 +17,10 @@ function Header() {
                         <Link to="/contacto">contacto</Link>
                     </li>
                 </ul>
+                <div className="d-flex align-items-center">
+                    <Buscador />
+                    <Deslogear />
+                </div>
             </nav>
         </header>
     );

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import "../css/Deslogear.css";
 function Deslogear() {
     const navigate = useNavigate();
     const deslogear = () => {
@@ -8,7 +8,7 @@ function Deslogear() {
     };
     return (
         <>
-            <button className="btn btn-dark" onClick={deslogear}>
+            <button className="btn btn-dark boton" onClick={deslogear}>
                 deslogear
             </button>
         </>
